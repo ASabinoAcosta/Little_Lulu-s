@@ -1,0 +1,67 @@
+.title-cont{
+    font-size: 5rem;
+    font-weight: 100;
+}
+.texto h2{
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+    color: #457B9D;
+}
+section{
+    display: flex;
+}
+.izquierda{
+    width: 32%;
+    height: 18rem;
+    margin-left: 316px;
+}
+.title-cont{
+    width: 41%;
+    min-height: 45px;
+    margin: 0;
+    margin-left: 117px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.texto{
+    width: 63%;
+    color: #457B9D;
+    min-height: 113px;
+    margin-left: 89px;
+}
+button{
+    background-color: #F25C54;
+    color: aliceblue;
+    font-family: "poppins";
+    font-weight: 700;
+    width: 41%;
+    min-height: 48px;
+    margin-left: 125px;
+    margin-top: -15px;
+    border-radius: 12px;
+    border: none;
+}
+button:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+
+.derecha{
+    width: 5%;
+    margin: 0;
+    margin-left: 12px;
+}
+.img-cont{
+    width: 14%;
+    height: 282px;
+}
+.img-cont img{
+    margin: 0;
+    position: absolute;
+    top: 6rem;
+    left: 45rem;
+    width: 209px;
+}

@@ -1,0 +1,29 @@
+
+.frankisti .text-bg {
+    background-color: #ffedce;
+    width: 35%;
+    min-height: 267px;
+    text-align: justify;
+    padding: 43px;
+
+}
+article {
+    position: relative;
+    padding-bottom: 40px;
+}
+
+/* Botón "mostrar más" */
+.more {
+    position: absolute;
+    right: 108px;
+    bottom: 1px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #457B9D;
+    font-family: "poppins";
+    font-weight: 600;
+}
+
+.more:hover {
+    color: #555;
+}

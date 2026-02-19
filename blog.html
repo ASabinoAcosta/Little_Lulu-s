@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ana K. Sabino" />
+        <meta
+            name="description"
+            content="Un sitio donde aprendemos juntos desarrollo web desde frotn-end hasta backend con ejercicios divertidos y pequeñas charlas" />
+        <meta name="keywords" content="lulú, blog, codigo, desarrollo web, frontend, ejercicios, programación" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="blog.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+
+        <script src="https://kit.fontawesome.com/95fe667186.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="recursos/lulu_ico.png" type="image/png" />
+        <title>Blog</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-men">
+                <div class="logo">
+                    <a href="main.html">
+                        <img src="recursos/lulu_logo.png" alt="Lulú sonriendo" class="img-logo" />
+                        <h1>Little Lulu's Place</h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links" id="nav-links">
+                        <li><a href="main.html">Inicio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="notificaciones">
+                    <!-- Tema aún en estudio, pero muy útil para este caso -->
+                    <input type="checkbox" id="notif-toggle" />
+                    <label for="notif-toggle" class="notif-btn">
+                        <i class="notif-ico"></i>
+                    </label>
+
+                    <!-- Lo que se despliega -->
+                    <div class="list-cont">
+                        <h2 class="notif-title">NOTIFICACIONES</h2>
+
+                        <div class="notif-item">
+                            <a href="404.html"
+                                ><p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                                <p class="notif-time">Hace 2 min</p></a
+                            >
+                        </div>
+
+                        <div class="notif-item">
+                            <a href="404.html"
+                                ><p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                                <p class="notif-time">Hace 4 días</p></a
+                            >
+                        </div>
+
+                        <div class="notif-item">
+                            <a href="404.html"
+                                ><p class="notif-text">¡Nuevo artículo en "Charlas con café"!</p>
+                                <p class="notif-time">Hace 9 días</p></a
+                            >
+                        </div>
+
+                        <div class="notif-item">
+                            <a href="404.html"
+                                ><p class="notif-text">¡Nuevo artículo en "Desafíos de Lulú"!</p>
+                                <p class="notif-time">Hace 2 semanas</p></a
+                            >
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </header>
+        <main>
+            <section class="frankisti">
+                <img src="recursos/lulu_blog.png" class="img-cont" />
+                <div class="text-bg">
+                    <h2>¿Qué más hay, Lulú?</h2>
+                    <p>Hay tantas cosas por aprender y tantos retos divertidos. ¡Ven a ver! ¿Qué haremos hoy?</p>
+                    <p>
+                        En cada sección aprendo algo nuevo con tu compañía, diviértete con “manos al código” y “Desafíos
+                        de Lulú” o relájate un rato con “charlas con café”.
+                    </p>
+                </div>
+            </section>
+            <section>
+                <div class="title"><h1>Manos al código</h1></div>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_1.png" alt="" width="200px" class="lulu-2" /></div>
+                    <div class="text-cont">
+                        <h2>¿Qué hay en la caja?</h2>
+                        <p>
+                            ¿Acaso la terminal es solo para soltar números y letras al azar? No, ¡y hoy descubriremos un
+                            juego sencillo y divertido de hacer en la terminal. Y, como siempre, ejemplos con 3
+                            lenguajes para que juntos lo analicemos.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">manos al código</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">??</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="img-cont">
+                        <img src="recursos/lulu_2.png" width="287px" height="369px" alt="" class="lulu-2" />
+                    </div>
+                    <div class="text-cont">
+                        <h2>Mi primer botón mágico</h2>
+                        <p>
+                            ¿Un simple botón puede convertirse en algo adorable y lleno de personalidad? ¡Pues claro que
+                            sí! Hoy vamos a crear un botón mágico que cambia de color como si estuviera jugando contigo.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">manos al código</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">??</p>
+                        </div>
+                    </div>
+                    <p class="more"><a href="404.html">mostrar más...</a></p>
+                </article>
+            </section>
+
+            <section>
+                <div class="title"><h1>Desafíos de Lulú</h1></div>
+
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_4.png" alt="" width="290px" /></div>
+                    <div class="text-cont">
+                        <h2>La gran misión del contador travieso</h2>
+                        <p>
+                            ¿Puede un número tener más energía que tú después de tres tazas de café? ¡Sí, y hoy lo
+                            verás! Prepárate para domar un contador tan emocionado que a veces sube dos veces porque no
+                            sabe esperar. Vamos a programarlo paso a paso para que por fin se porte bien… o al menos,
+                            casi.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">desafíos de Lulú</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">295</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_2_2.png" alt="" width="290px" /></div>
+                    <div class="text-cont">
+                        <h2>El enigma del botón tímido</h2>
+                        <p>
+                            ¿Puede un botón fingir que no te escuchó? Claro que sí. Hoy vas a domesticar a ese botón
+                            tímido que solo responde si le hablas bonito o le lanzas confeti. Vamos a hacerlo cambiar de
+                            color, vibrar un poquito y —si te portas bien— mostrar un mensajito alegre. Código paso a
+                            paso, sin dramas, con muchas pruebas y alguna que otra risa.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">desafíos de Lulú</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">195</p>
+                        </div>
+                    </div>
+                    <p class="more"><a href="404.html">mostrar más...</a></p>
+                </article>
+            </section>
+            <section>
+                <div class="title"><h1>Charlas con café</h1></div>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_3.png" alt="" width="280px" /></div>
+                    <div class="text-cont">
+                        <h2>Cómo no llorar cuando tu código no funciona</h2>
+                        <p>
+                            ¿Acaso los errores aparecen solo para arruinarte el día? ¡No! En realidad vienen a darte una
+                            mini clase gratis (aunque a veces parezcan drama queens). Hoy hablaremos de cómo mantener la
+                            calma, respirar rico con una taza de café, y entender qué te está diciendo tu código… sin
+                            lágrimas de por medio.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">charlas con café</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">396</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_3_2.png" alt="" width="280px" /></div>
+                    <div class="text-cont">
+                        <h2>La vez que borré un archivo (y aprendí a no llorar)</h2>
+                        <p>
+                            Borrar archivos es un deporte extremo, y Lulú lo practicó sin casco. Después de ese gran
+                            “poof”, vino el aprendizaje: backups, ramas y commits frecuentes. Te cuento la anécdota con
+                            humor y te doy una checklist para evitar que tu próxima limpieza se convierta en tragedia.
+                            Repite conmigo: “Commiteo, luego existo”.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">charlas con café</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">187</p>
+                        </div>
+                    </div>
+                    <p class="more"><a href="404.html">mostrar más...</a></p>
+                </article>
+            </section>
+            <section>
+                <div class="title"><h1>Cosas que aprendí</h1></div>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_4_1.png" alt="" width="280px" /></div>
+                    <div class="text-cont">
+                        <h2>Console.log: tu detective personal</h2>
+                        <p>
+                            ¿Puedes comunicarte con tu código? Sí, y console.log es tu intérprete. Aquí te muestro cómo
+                            usarlo con estrategia (no como spam), para rastrear valores, tiempos y decisiones. También
+                            repasamos trucos para formatear salidas y no perder horas mirando una pared de números.
+                            Resultado: menos llanto, más pistas.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">cosas que aprendí</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">301</p>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div class="img-cont"><img src="recursos/lulu_4_2.png" alt="" width="280px" /></div>
+                    <div class="text-cont">
+                        <h2>Flexbox explicado con el clóset de Lulú</h2>
+                        <p>
+                            Si tu clóset pudiera hablar, te diría cómo distribuir calcetines y libros con estilo.
+                            Flexbox es exactamente eso, pero para cajas en la web. Usaremos la ropa de Lulú como modelo:
+                            alineación, orden y espacio entre prendas. Resultado: entenderás justify-content y
+                            align-items sin sufrir. Además, ejemplos prácticos para tu layout del blog.
+                        </p>
+                        <div class="etiquetas">
+                            <p class="tag"><a href="404.html">cosas que aprendí</a></p>
+                            <i class="fa-regular fa-eye ico-w"></i>
+                            <p class="vistas">276</p>
+                        </div>
+                    </div>
+                    <p class="more"><a href="404.html">mostrar más...</a></p>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div class="f1">
+                <div class="text-f1"><h2>¡NOTIFÍCATE!</h2></div>
+
+                <div class="img-f1">
+                    <div class="circle"></div>
+                    <img src="recursos/lulu_call.png" alt="Lulú" class="footer-img" />
+                </div>
+            </div>
+
+            <div class="f2">
+                <div class="text-f2">
+                    <h1 class="titulo-top">DECIDE QUÉ ES LO PRÓXIMO <span class="letra-y">Y</span></h1>
+                    <h1 class="texto-largo">RECIBE ALERTAS CUANDO LULÚ PUBLIQUE NUEVOS EXPERIMENTOS</h1>
+                </div>
+                <dialog id="myDialog">
+                    <div class="modal-container">
+                        <button class="btn-close" onclick="myDialog.close()">X</button>
+
+                        <div class="modal-left">
+                            <form action="submit" method="post">
+                                <div class="input-group">
+                                    <input
+                                        type="text"
+                                        placeholder="Nombre"
+                                        pattern="[A-Za-z]+"
+                                        title="Solo textos"
+                                        required />
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" placeholder="Email" required />
+                                </div>
+                                <button type="submit" class="btn-enviar">Enviar</button>
+                            </form>
+                        </div>
+
+                        <div class="modal-right">
+                            <h1>
+                                ¡PRONTO NOS <br />
+                                CONTACTAREMOS!
+                            </h1>
+                            <div class="lulu-wrapper">
+                                <div class="circle-modal"></div>
+                                <img src="recursos/lulu_call.png" alt="Lulú" class="img-modal" />
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
+                <button class="button-f2" onclick="myDialog.showModal()">Suscríbete</button>
+            </div>
+        </footer>
+    </body>
+</html>

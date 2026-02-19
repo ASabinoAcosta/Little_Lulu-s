@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Ana K. Sabino" />
+    <meta
+      name="description"
+      content="Un sitio donde aprendemos juntos desarrollo web desde frotn-end hasta backend con ejercicios divertidos y pequeñas charlas"
+    />
+    <meta
+      name="keywords"
+      content="lulú, blog, codigo, desarrollo web, frontend, ejercicios, programación"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/95fe667186.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="recursos/lulu_ico.png" type="image/png" />
+    <title>Little Lulu's Place</title>
+  </head>
+  <body>
+    <header>
+      <button class="nav-toggle" aria-label="Abrir menú">
+        <i class="fa-solid fa-bars"></i>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-men">
+        <div class="logo">
+          <a href="main.html">
+            <img
+              src="recursos/lulu_logo.png"
+              alt="Lulú sonriendo"
+              class="img-logo"
+            />
+            <h1>Little Lulu's Place</h1>
+          </a>
+        </div>
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="main.html">Inicio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="notificaciones">
+          <!-- Tema aún en estudio, pero muy útil para este caso -->
+          <input type="checkbox" id="notif-toggle" />
+          <label for="notif-toggle" class="notif-btn">
+            <i class="notif-ico"></i>
+          </label>
+
+          <!-- Lo que se despliega -->
+          <div class="list-cont">
+            <h2 class="notif-title">NOTIFICACIONES</h2>
+
+            <div class="notif-item">
+              <a href="404.html"
+                ><p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                <p class="notif-time">Hace 2 min</p></a
+              >
+            </div>
+
+            <div class="notif-item">
+              <a href="404.html"
+                ><p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                <p class="notif-time">Hace 4 días</p></a
+              >
+            </div>
+
+            <div class="notif-item">
+              <a href="404.html"
+                ><p class="notif-text">
+                  ¡Nuevo artículo en "Charlas con café"!
+                </p>
+                <p class="notif-time">Hace 9 días</p></a
+              >
+            </div>
+
+            <div class="notif-item">
+              <a href="404.html"
+                ><p class="notif-text">
+                  ¡Nuevo artículo en "Desafíos de Lulú"!
+                </p>
+                <p class="notif-time">Hace 2 semanas</p></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="frankisti">
+        <img src="recursos/lulu_main.png" class="img-cont" />
+        <div class="text-cont">
+          <h2>Lulú Aprende Desarrollo Web</h2>
+          <p>
+            ¡Hey! Soy Lulú, una desarrolladora curiosa que ama aprender cosas
+            nuevas. ¡Bienvenidos a mi blog!
+          </p>
+          <p>
+            Aquí comparto mis aventuras aprendiendo desarrollo web y de
+            software, junto con tips y consejitos que quizás también te ayuden a
+            ti.
+          </p>
+          <p>
+            Y si te gustan los retos, no te vayas muy lejos… porque tengo una
+            sección con desafíos divertidos que seguro te van a encantar.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="title"><h1>¡Lo más nuevo!</h1></div>
+        <article>
+          <div class="img-cont">
+            <img src="recursos/lulu_1.png" alt="" width="200px" />
+          </div>
+          <div class="text-cont">
+            <h2>¿Qué hay en la caja?</h2>
+            <p>
+              ¿Acaso la terminal es solo para soltar números y letras al azar?
+              No, ¡y hoy descubriremos un juego sencillo y divertido de hacer en
+              la terminal. Y, como siempre, ejemplos con 3 lenguajes para que
+              juntos lo analicemos.
+            </p>
+            <div class="etiquetas">
+              <p class="tag"><a href="404.html">manos al código</a></p>
+              <i class="fa-regular fa-eye ico-w"></i>
+              <p class="vistas">??</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="img-cont">
+            <img
+              src="recursos/lulu_2.png"
+              width="287px"
+              height="369px"
+              alt=""
+            />
+          </div>
+          <div class="text-cont">
+            <h2>Mi primer botón mágico</h2>
+            <p>
+              ¿Un simple botón puede convertirse en algo adorable y lleno de
+              personalidad? ¡Pues claro que sí! Hoy vamos a crear un botón
+              mágico que cambia de color como si estuviera jugando contigo.
+            </p>
+            <div class="etiquetas">
+              <p class="tag"><a href="404.html">manos al código</a></p>
+              <i class="fa-regular fa-eye ico-w"></i>
+              <p class="vistas">??</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section>
+        <div class="title"><h1>Populares</h1></div>
+        <article>
+          <div class="img-cont">
+            <img src="recursos/lulu_3.png" alt="" width="280px" />
+          </div>
+          <div class="text-cont">
+            <h2>Cómo no llorar cuando tu código no funciona</h2>
+            <p>
+              ¿Acaso los errores aparecen solo para arruinarte el día? ¡No! En
+              realidad vienen a darte una mini clase gratis (aunque a veces
+              parezcan drama queens). Hoy hablaremos de cómo mantener la calma,
+              respirar rico con una taza de café, y entender qué te está
+              diciendo tu código… sin lágrimas de por medio.
+            </p>
+            <div class="etiquetas">
+              <p class="tag"><a href="404.html">charlas con café</a></p>
+              <i class="fa-regular fa-eye ico-w"></i>
+              <p class="vistas">396</p>
+            </div>
+          </div>
+        </article>
+
+        <article>
+          <div class="img-cont">
+            <img src="recursos/lulu_4.png" alt="" width="290px" />
+          </div>
+          <div class="text-cont">
+            <h2>La gran misión del contador travieso</h2>
+            <p>
+              ¿Puede un número tener más energía que tú después de tres tazas de
+              café? ¡Sí, y hoy lo verás! Prepárate para domar un contador tan
+              emocionado que a veces sube dos veces porque no sabe esperar.
+              Vamos a programarlo paso a paso para que por fin se porte bien… o
+              al menos, casi.
+            </p>
+            <div class="etiquetas">
+              <p class="tag"><a href="404.html">desafíos de Lulú</a></p>
+              <i class="fa-regular fa-eye ico-w"></i>
+              <p class="vistas">295</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="f1">
+        <div class="text-f1"><h2>¡NOTIFÍCATE!</h2></div>
+
+        <div class="img-f1">
+          <div class="circle"></div>
+          <img src="recursos/lulu_call.png" alt="Lulú" class="footer-img" />
+        </div>
+      </div>
+
+      <div class="f2">
+        <div class="text-f2">
+          <h1 class="titulo-top">
+            DECIDE QUÉ ES LO PRÓXIMO <span class="letra-y">Y</span>
+          </h1>
+          <h1 class="texto-largo">
+            RECIBE ALERTAS CUANDO LULÚ PUBLIQUE NUEVOS EXPERIMENTOS
+          </h1>
+        </div>
+        <dialog id="myDialog">
+          <div class="modal-container">
+            <button class="btn-close" onclick="myDialog.close()">X</button>
+
+            <div class="modal-left">
+              <form id="contact-form" action="submit" method="post">
+                <div class="input-group">
+                  <label for="nombre" class="sr-only">Nombre</label>
+                  <input
+                    id="nombre"
+                    name="nombre"
+                    type="text"
+                    placeholder="Nombre"
+                    minlength="2"
+                    maxlength="40"
+                    pattern="^[A-Za-zÑñÁÉÍÓÚáéíóú ]+$"
+                    required
+                    aria-describedby="error-nombre"
+                  />
+                  <p id="error-nombre" class="error-msg" aria-live="polite"></p>
+                </div>
+
+                <div class="input-group">
+                  <label for="email" class="sr-only">Correo electrónico</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                    aria-describedby="error-email"
+                  />
+                  <p id="error-email" class="error-msg" aria-live="polite"></p>
+                </div>
+
+                <div
+                  id="form-status"
+                  class="status-msg"
+                  aria-live="assertive"
+                ></div>
+
+                <button type="submit" class="btn-enviar">Enviar</button>
+              </form>
+            </div>
+
+            <div class="modal-right">
+              <h1>
+                ¡PRONTO NOS <br />
+                CONTACTAREMOS!
+              </h1>
+              <div class="lulu-wrapper">
+                <div class="circle-modal"></div>
+                <img
+                  src="recursos/lulu_call.png"
+                  alt="Lulú"
+                  class="img-modal"
+                />
+              </div>
+            </div>
+          </div>
+        </dialog>
+        <button class="button-f2" onclick="myDialog.showModal()">
+          Suscríbete
+        </button>
+      </div>
+    </footer>
+    <script>
+      // FORMULARIO
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const form = document.getElementById("contact-form");
+        const inputs = Array.from(form.querySelectorAll("input"));
+        const statusMsg = document.getElementById("form-status");
+
+        const messages = {
+          nombre: {
+            valueMissing: "Por favor ingresa tu nombre.",
+            patternMismatch: "El nombre solo puede contener letras y espacios.",
+            tooShort: "El nombre es demasiado corto.",
+          },
+          email: {
+            valueMissing: "Por favor ingresa tu email.",
+            typeMismatch: "Ingresa un email válido (ej: tunombre@dominio.com).",
+          },
+        };
+
+        // Validación en tiempo real
+        inputs.forEach((input) => {
+          input.addEventListener("input", () => validateField(input));
+          input.addEventListener("blur", () => validateField(input));
+        });
+
+        function validateField(input) {
+          const errorBox = document.getElementById("error-" + input.id);
+          errorBox.textContent = "";
+
+          if (input.validity.valid) {
+            return true;
+          }
+
+          //Temas nuevos a estudiar para mejorar estado actual del código
+          if (input.validity.valueMissing) {
+            errorBox.textContent = messages[input.id].valueMissing;
+          } else if (input.validity.patternMismatch) {
+            errorBox.textContent = messages[input.id].patternMismatch;
+          } else if (input.validity.typeMismatch) {
+            errorBox.textContent = messages[input.id].typeMismatch;
+          } else if (input.validity.tooShort) {
+            errorBox.textContent = messages[input.id].tooShort;
+          } else {
+            errorBox.textContent = "Por favor revisa este campo.";
+          }
+
+          return false;
+        }
+
+        form.addEventListener("submit", async (e) => {
+          // siempre prevenimos el submit por defecto para controlar el flujo
+          e.preventDefault();
+
+          statusMsg.textContent = "";
+
+          // forzamos la validación de cada campo y mostramos mensajes
+          let formIsValid = true;
+          inputs.forEach((input) => {
+            const ok = validateField(input);
+            if (!ok) formIsValid = false;
+          });
+
+          // también comprobamos checkValidity() por si hay reglas no cubiertas
+          if (!form.checkValidity()) formIsValid = false;
+
+          if (!formIsValid) {
+            // enfocamos el primer campo inválido
+            const firstInvalid = form.querySelector(":invalid");
+            if (firstInvalid) firstInvalid.focus();
+            statusMsg.textContent =
+              "Hay errores en el formulario. Por favor corrige los campos marcados.";
+            return;
+          }
+
+          // Si llegamos aquí, todo válido  enviamos (en este caso simulamos)
+          statusMsg.textContent = "Enviando...";
+          try {
+            await new Promise((res) => setTimeout(res, 900));
+            statusMsg.textContent = "¡Formulario enviado correctamente!";
+            form.reset();
+            statusMsg.focus?.();
+          } catch (err) {
+            statusMsg.textContent = "Error al enviar. Intenta de nuevo.";
+          }
+        });
+      });
+      //Menu hamburguesa
+      const navToggle = document.querySelector(".nav-toggle");
+      const navMenu = document.querySelector(".nav-menu");
+
+      navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("nav-menu_visible");
+
+        // Opcional: Cambia el atributo para lectores de pantalla
+        const isVisible = navMenu.classList.contains("nav-menu_visible");
+        navToggle.setAttribute(
+          "aria-label",
+          isVisible ? "Cerrar menú" : "Abrir menú",
+        );
+      });
+    </script>
+  </body>
+</html>

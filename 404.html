@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Ana K. Sabino" />
+        <meta
+            name="description"
+            content="Un sitio donde aprendemos juntos desarrollo web desde frotn-end hasta backend con ejercicios divertidos y pequeñas charlas" />
+        <meta name="keywords" content="lulú, blog, codigo, desarrollo web, frontend, ejercicios, programación" />
+
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="404.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet" />
+
+        <script src="https://kit.fontawesome.com/95fe667186.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="recursos/lulu_ico.png" type="image/png" />
+        <title>Error 404</title>
+    </head>
+    <body>
+        <header>
+            <div class="nav-men">
+                <div class="logo">
+                    <a href="main.html">
+                        <img src="recursos/lulu_logo.png" alt="Lulú sonriendo" class="img-logo" />
+                        <h1>Little Lulu's Place</h1>
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="main.html">Inicio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="notificaciones">
+                    <!-- Tema aún en estudio, pero muy útil para este caso -->
+                    <input type="checkbox" id="notif-toggle" />
+                    <label for="notif-toggle" class="notif-btn">
+                        <i class="notif-ico"></i>
+                    </label>
+
+                    <!-- Lo que se despliega -->
+                    <div class="list-cont">
+                        <h2 class="notif-title">NOTIFICACIONES</h2>
+
+                        <div class="notif-item">
+                            <p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                            <p class="notif-time">Hace 2 min</p>
+                        </div>
+
+                        <div class="notif-item">
+                            <p class="notif-text">¡Nuevo artículo en "manos al código"!</p>
+                            <p class="notif-time">Hace 4 días</p>
+                        </div>
+
+                        <div class="notif-item">
+                            <p class="notif-text">¡Nuevo artículo en "Charlas con café"!</p>
+                            <p class="notif-time">Hace 9 días</p>
+                        </div>
+
+                        <div class="notif-item">
+                            <p class="notif-text">¡Nuevo artículo en "Desafíos de Lulú"!</p>
+                            <p class="notif-time">Hace 2 semanas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="izquierda">
+                    <h1 class="title-cont">404</h1>
+                    <div class="texto">
+                        <h2>Página no encontrada</h2>
+                        <p>Lo sentimos, esta página no existe</p>
+                    </div>
+                    <a href="main.html"><button>Volver al inicio</button></a>
+                </div>
+                <div class="derecha">
+                    <div class="img-cont"><img src="recursos/lulu_404.png" alt=""></div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
