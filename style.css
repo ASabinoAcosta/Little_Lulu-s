@@ -464,6 +464,9 @@ nav {
   top: 11px;
   color: #457b9d;
 }
+.nav-toggle {
+  display: none;
+}
 
 /* NOTIFICACIONES DESPLEGABLE */
 .notificaciones {
@@ -740,7 +743,7 @@ dialog {
   border: none;
   border-radius: 20px;
   padding: 0;
-  background-color: #fdf5e6; /* Mismo color crema del fondo */
+  background-color: #fdf5e6;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   max-width: 750px;
   width: 90%;
@@ -836,7 +839,7 @@ dialog::backdrop {
   border: 0;
 }
 
-/* --- LADO DERECHO (VISUAL) --- */
+/* --- LADO DERECHO--- */
 .modal-right {
   flex: 1; /* Ocupa la otra mitad */
   display: flex;
@@ -947,7 +950,9 @@ dialog::backdrop {
   }
   .notificaciones {
     position: absolute;
-    right: 65px;
+    right: 70px;
+    top: 25px;
+    z-index: 10;
   }
   nav {
     width: auto;
@@ -956,60 +961,46 @@ dialog::backdrop {
     top: 30px;
     right: 15px;
   }
-  .hamburger {
-    display: flex;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
   .nav-menu {
     flex-direction: column;
-    background-color: #333;
+    background-color: #fdf5e6;
     position: fixed;
     left: 0;
-    top: 60px; /* Ajusta según la altura de tu header */
+    top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    justify-content: center;
     align-items: center;
-
-    /* Aquí está el truco: oculto por defecto */
+    gap: 40px;
     display: none;
+    z-index: 90;
+  }
+  .nav-menu li a {
+    color: #f25c54;
+    font-size: 2rem;
+    font-family: "Luckiest Guy", cursive;
+    text-decoration: none;
   }
 
-  /* Esta clase la pondrá el JS al hacer click */
   .nav-menu_visible {
     display: flex;
   }
 
   .nav-toggle {
     display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: #457b9d;
     cursor: pointer;
   }
-  /*.nav-menu {
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 15px 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
-    width: 180px;
-
-    
-    transform: scale(0);
-    opacity: 0;
-    pointer-events: none;
-    transform-origin: top right;
-    transition: 0.25s ease;
+  #notif-toggle:checked ~ .list-cont {
+    z-index: 95;
   }
-  .menu-toggle:checked ~ .nav-menu {
-    transform: scale(1);
-    opacity: 1;
-    pointer-events: auto;
-  }*/
   /* MAIN */
 
   main {
@@ -1117,13 +1108,347 @@ dialog::backdrop {
     padding-right: 11px;
     padding-top: 30px;
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Bloque de Lulú (f1) */
+  .f1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: static;
+    order: 1;
+  }
+
+  .text-f1 h2 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    left: 20px;
+    top: 70px;
+  }
+
+  .img-f1 {
+    position: relative;
+    width: 150px;
+    height: 150px;
+  }
+
+  .circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  .footer-img {
+    width: 110px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Bloque de Contenido (f2) */
+  .f2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: static;
+    order: 2;
+  }
+
+  .text-f2 {
+    margin-bottom: 160px;
+    text-align: center;
+  }
+  .titulo-top,
+  .texto-largo {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 8px 0;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* Botón Suscríbete */
+  .button-f2 {
+    position: absolute;
+    width: 220px;
+    padding: 15px;
+    margin-top: 10px;
+    align-self: center;
+    left: 0;
+    top: 214px;
+  }
+  #myDialog {
+    width: 90%;
+    max-width: 400px;
+    padding: 0;
+    border-radius: 20px;
+    border: none;
+  }
+  .modal-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    position: relative;
+  }
+
+  .btn-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  /* Parte izquierda: El Formulario */
+  .modal-left {
+    width: 100%;
+    order: 2;
+  }
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 25px;
+    box-sizing: border-box;
+  }
+
+  /* Parte derecha: Lulú y el Título */
+  .modal-right {
+    width: 100%;
+    order: 1;
+    text-align: center;
+  }
+
+  .modal-right h1 {
+    font-size: 1.2rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    color: #f25c54;
+  }
+
+  /* Contenedor de Lulú en el modal */
+  .lulu-wrapper {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+  }
+
+  .circle-modal {
+    width: 100%;
+    height: 100%;
+    background-color: #ffeb54;
+    border-radius: 50%;
+  }
+
+  .img-modal {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .btn-enviar {
+    width: 100%;
+    padding: 15px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    margin-top: 10px;
+  }
 }
 
 /* -------------------------------- */
-/* 1024px */
+/* Tablets: 601px a 1020px */
 /* -------------------------------- */
-@media (min-width: 768px) and (max-width: 1024px) {
-  main {
-    background-color: aqua;
+@media (min-width: 601px) and (max-width: 1020px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  /* NAV MENU */
+  .nav-men {
+    height: 85px;
+  }
+
+  .logo {
+    width: 300px;
+    height: 65px;
+  }
+
+  .img-logo {
+    width: 65px;
+    min-height: 65px;
+  }
+
+  nav {
+    width: 55%;
+    right: 70px;
+  }
+
+  .nav-menu {
+    gap: 18px;
+    font-size: 1rem;
+  }
+
+  /* MAIN */
+  section .title {
+    width: 45%;
+    margin-left: 33%;
+  }
+
+  section article {
+    gap: 20px;
+    width: 88%;
+    margin: 20px auto;
+  }
+
+  section article .img-cont {
+    width: 260px;
+    min-height: 250px;
+  }
+
+  section article .text-cont {
+    width: 450px;
+    min-height: 260px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .frankisti {
+    gap: 20px;
+    padding: 25px 0;
+    width: 92%;
+  }
+
+  .frankisti .img-cont {
+    width: 32%;
+    min-height: 160px;
+  }
+
+  .frankisti .text-cont {
+    width: 62%;
+    min-height: 260px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 40px 3%;
+    gap: 24px;
+    min-height: 300px;
+  }
+
+  .f1 {
+    position: static;
+    width: 30%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 1;
+    margin: 0;
+  }
+
+  .text-f1 {
+    position: static;
+    top: auto;
+    left: auto;
+    margin: 0 0 12px 0;
+    text-align: left;
+  }
+
+  .img-f1 {
+    position: relative;
+    width: 160px;
+    height: 160px;
+  }
+
+  .circle {
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .footer-img {
+    width: 120px;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .f2 {
+    position: static;
+    width: 65%;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: 2;
+    margin: 0;
+  }
+
+  .text-f2 {
+    margin-bottom: 16px;
+    text-align: left;
+    max-width: none;
+  }
+
+  .button-f2 {
+    position: static;
+    width: auto;
+    padding: 12px 28px;
+    align-self: flex-start;
+    margin-top: 8px;
+    left: auto;
+    top: auto;
+  }
+
+  /* DIALOG */
+  dialog {
+    max-width: 550px;
+  }
+
+  .modal-container {
+    padding: 25px;
+    gap: 15px;
   }
 }

@@ -1,29 +1,69 @@
-
 .frankisti .text-bg {
-    background-color: #ffedce;
-    width: 35%;
-    min-height: 267px;
-    text-align: justify;
-    padding: 43px;
-
+  background-color: #ffedce;
+  width: 35%;
+  min-height: 267px;
+  text-align: justify;
+  padding: 43px;
 }
 article {
-    position: relative;
-    padding-bottom: 40px;
+  position: relative;
+  padding-bottom: 40px;
 }
 
 /* Botón "mostrar más" */
 .more {
-    position: absolute;
-    right: 108px;
-    bottom: 1px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: #457B9D;
-    font-family: "poppins";
-    font-weight: 600;
+  position: absolute;
+  right: 108px;
+  bottom: 1px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #457b9d;
+  font-family: "poppins";
+  font-weight: 600;
 }
 
 .more:hover {
-    color: #555;
+  color: #555;
+}
+@media (max-width: 600px) {
+  .frankisti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 20px;
+  }
+
+  /* La imagen de Lulú arriba */
+  .frankisti .img-cont {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .frankisti .img-cont img {
+    width: 180px;
+    height: auto;
+  }
+  .frankisti .text-bg {
+    width: 90%;
+    min-height: auto;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+  }
+
+  .frankisti .text-bg h2 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    color: #f25c54;
+  }
+
+  .frankisti .text-bg p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: center;
+  }
 }

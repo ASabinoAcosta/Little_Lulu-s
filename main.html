@@ -394,13 +394,6 @@
 
       navToggle.addEventListener("click", () => {
         navMenu.classList.toggle("nav-menu_visible");
-
-        // Opcional: Cambia el atributo para lectores de pantalla
-        const isVisible = navMenu.classList.contains("nav-menu_visible");
-        navToggle.setAttribute(
-          "aria-label",
-          isVisible ? "Cerrar menú" : "Abrir menú",
-        );
       });
     </script>
   </body>
